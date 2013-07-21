@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Arcanum</title>
+    <meta name="author" content="Paulo Oliveira">
+
+    <!-- Load Inks' CSS -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.ink.sapo.pt/2.1.1/css/ink-min.css">
+
+    <!-- Load arcanum' CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!--[if lt IE 9]>
+        <script type="text/javascript" src="http://cdn.ink.sapo.pt/2.1.1/js/html5shiv.js"></script>
+        <script type="text/javascript" src="http://cdn.ink.sapo.pt/2.1.1/js/html5shiv-printshiv.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 7 ]>
+        <link rel="stylesheet" href="http://cdn.ink.sapo.pt/2.1.1/css/ink-ie7.css" type="text/css" media="screen" title="no title" charset="utf-8">
+    <![endif]-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="http://cdn.ink.sapo.pt/2.1.1/js/ink.min.js"></script>
+    <!-- End of javascript -->
+</head>
+<body>
+    <div class="ink-grid">
+        <div id="main">
+            <div id="header">
+                <h1><i class="icon-lock"></i> arcanum</h1>
+                <h6>Generates an password hash from a secret provided</h6>
+            </div>
+            <div id="window">
+                <form class="ink-form">
+                    <fieldset>
+                        <div class="control-group column-group">
+                            <label for="text-input">Website: </label>
+                            <div class="control">
+                                <input id="website" type="text" placeholder="Please insert your website">
+                            </div>
+                        </div>
+                        <div class="control-group column-group">
+                            <label for="text-input">Passphrase: </label>
+                            <div class="control">
+                                <input id="passphrase" type="text" placeholder="Please insert your passphrase">
+                            </div>
+                        </div>
+                        <div class="control-group column-group">
+                            <label for="text-input">Generated Password: </label>
+                            <div class="control">
+                                <input id="password" type="text" placeholder="Password generated here" disabled>
+                            </div>
+                        </div>
+                        <br/>
+                        <!--div class="control">
+                            <h6>Strength: </h6>
+                            <div id="label"><label id="bytes">0 bytes</label></div>
+                            <div id="bar"></div>
+                        </div>
+                        <br/-->
+                        <div class="control" style="padding: 10px 0 0 140px;">
+                            <button id="submit" class="ink-button green">GENERATE</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <footer>
+                <nav class="ink-navigation hspace">
+                    <p>Copyright &copy 2013</p>
+                    <p>Developed by <a href="http://about.me/pnascimento">Paulo Oliveira</a></p>
+                </nav>
+            </footer>
+        </div>
+    </div> 
+
+    <!-- to increase loading performance -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
+    <script type="text/javascript" src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

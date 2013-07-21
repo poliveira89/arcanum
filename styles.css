@@ -1,0 +1,43 @@
+@charset 'UTF-8';
+
+body {
+    background: url(http://api.thumbr.it/whitenoise-361x370.png?background=d4d4d4ff&noise=8a8a8a&density=30&opacity=5);
+}
+
+#header {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+}
+
+#main {
+    width: 400px;
+    margin: 0 auto;
+}
+
+#password {
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+#label {
+    margin-top: 5px !important;
+    padding-bottom: 8px;
+}
+
+#bar {
+    width: 50%;
+    height: 8px;
+    background-color: blue;
+}
+
+footer {
+    padding: 12px 0;
+    font-size: 80%;
+}
+
+p {
+    margin-top: 5px !!important;
+    padding: 0px;
+}
